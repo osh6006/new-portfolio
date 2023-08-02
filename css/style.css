@@ -19,6 +19,7 @@
 }
 
 body {
+  margin: 0;
   font-family: "Open Sans", "Noto Sans KR", sans-serif;
 }
 
@@ -48,4 +49,53 @@ button {
 
 button:focus {
   outline: 1px solid var(--color-accent);
+}
+
+/* Header */
+.header {
+  background-color: #fd6413;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 이렇게 사용하면 성능에 좋지 않음 */
+/* 페이지에 존재하는 모든 이미지 태그를 찾은 후 클래스이름을 찾기 때문 */
+/* .header__logo img{} */
+
+.header__logo__img {
+  width: 36px;
+  height: 36px;
+}
+
+.header__logo__title {
+  font-size: 1.8rem;
+}
+
+.header__menu {
+  display: flex;
+  gap: 4px;
+}
+
+.header__menu__item {
+  padding: 8px 16px;
+}
+
+.header__menu__item:hover {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.header__menu__item.active {
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
 }
