@@ -12,6 +12,19 @@
   --color-blue: #03e8f9;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
+
+  /* Size */
+  --size-max-width: 1200px;
+
+  /* Change this to change the appearance of the hexaons */
+  --hex-width: 100px;
+  --hex-between: 10px;
+
+  /* Other hexagon dimentions */
+  --hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
+  --hex-margin: calc(var(--hex-width) / 2);
+  --hex-border: calc(var(--hex-margin) / 1.73 /* sqrt(3) */);
+  --hex-transition: all 0.2s ease;
 }
 
 * {
@@ -67,9 +80,17 @@ button:focus {
   margin: 1rem 0;
 }
 
+.max-container {
+  max-width: var(--size-max-width);
+}
+
+.small {
+  transform: scale(0.5);
+}
+
 /* Header */
 .header {
-  background-color: #fd6413;
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100%;
@@ -77,6 +98,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .header__logo {
@@ -119,11 +141,15 @@ button:focus {
 /* Home */
 
 #home {
-  background-color: var(--color-primary);
-  color: var(--color-text);
-  padding: 5rem 1rem;
-  padding-top: 7rem;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  color: var(--color-text);
+  background-color: var(--color-primary);
 }
 
 .home__title {
@@ -148,4 +174,120 @@ button:focus {
 .home__contact:hover {
   background-color: var(--color-accent);
   color: var(--color-black);
+}
+
+/* About */
+
+.motto {
+  display: flex;
+  gap: 8px;
+  max-width: 80%;
+  margin: 4rem auto;
+  flex-wrap: wrap;
+  cursor: default;
+}
+
+.motto__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.motto__icon__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  background: #000;
+  margin: 4px 0px;
+  color: var(--color-text);
+  border-radius: 8px;
+  padding-top: 1rem;
+  transition: all 0.2s linear;
+}
+
+.motto__icon__wrapper:hover {
+  transform: scale(1.01);
+}
+
+.motto__icon__hexagon {
+  width: 100px;
+  height: 58px;
+  background-color: #3498db;
+  position: relative;
+  margin: 8px auto;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.motto__icon {
+  color: var(--color-text);
+  font-size: 2.5rem;
+}
+
+.motto__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.motto__desc {
+  width: 60%;
+  margin-top: 4px;
+  min-width: 150px;
+  min-height: 80px;
+  max-height: 70px;
+  text-align: center;
+}
+
+.jobs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.job {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.job__image__box {
+  width: 300px;
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.job__image {
+  width: 100%;
+  height: 100%;
+}
+
+.job__name {
+  color: var(--color-primary);
+}
+
+.job__period {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 375px) {
+  .motto {
+    max-width: 100%;
+  }
 }
