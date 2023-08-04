@@ -328,6 +328,7 @@ button:focus {
   background-color: var(--color-hex-default);
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   fill: white;
   height: var(--hex-height);
   justify-content: center;
@@ -335,6 +336,8 @@ button:focus {
   position: relative;
   transition: var(--hex-transition);
   width: var(--hex-width);
+  font-size: 0.5rem;
+  gap: 2px;
 }
 
 .skills__item::after,
@@ -474,4 +477,158 @@ button:focus {
 }
 .color-github:hover {
   fill: var(--color-github);
+}
+
+.skills__item__active {
+  position: absolute;
+  width: 103px;
+  height: 58px;
+  background-color: transparent;
+  margin: 15.5px 0;
+  border-left: solid 5px #fff;
+  border-right: solid 5px #fff;
+  bottom: -14px;
+  left: calc(50% - 52px);
+  display: block;
+}
+
+.skills__item__active:before,
+.skills__item__active:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 66.47px;
+  height: 66.47px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: transparent;
+  left: 9.766px;
+}
+
+.skills__item__active:before {
+  top: -37.234px;
+  border-top: solid 7.0711px #fff;
+  border-right: solid 7.0711px #fff;
+}
+
+.skills__item__active:after {
+  bottom: -36.234px;
+  border-bottom: solid 7.0711px #fff;
+  border-left: solid 7.0711px #fff;
+}
+
+.skills__item__active-left {
+  width: 0px;
+  height: 0px;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 9px solid #fff;
+  position: absolute;
+  left: 28px;
+  bottom: -18px;
+  opacity: 0.6;
+  z-index: 500;
+}
+
+.bar {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.bar__metadata {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.bar__bg {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-primary-variant);
+}
+
+.bar__value {
+  height: 5px;
+  background-color: var(--color-accent);
+}
+
+/* Work */
+#work {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem;
+  gap: 1rem;
+}
+
+.category {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  padding: 0.5rem 2.5rem;
+  border: 1px solid var(--color-accent);
+  cursor: pointer;
+}
+
+.category--selected {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.project {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project__img {
+  width: 100%;
+}
+
+.project__metadata {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 250ms ease-in;
+  transform: translateY(-10px);
+}
+
+.project__metadata:hover {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+/* 가상의 요소 */
+.project__title::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0.5rem 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-accent);
 }

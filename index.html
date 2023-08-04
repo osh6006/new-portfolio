@@ -148,7 +148,7 @@
       <section id="skills" class="section">
         <h2 class="title">My Skills</h2>
         <ul class="skills__box">
-          <li class="skills__item color-html">
+          <li class="skills__item color-html skill__active">
             <svg
               aria-labelledby="simpleicons-html5-icon"
               role="img"
@@ -160,8 +160,6 @@
                 d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
               />
             </svg>
-            <!-- <p>HTML</p>
-            <p>90%</p> -->
           </li>
           <li class="skills__item color-css">
             <svg
@@ -176,6 +174,11 @@
             </svg>
             <!-- <p>CSS</p>
             <p>80%</p> -->
+
+            <div class="skills__item__active">
+              <div class="arrow-left"></div>
+              <div class="arrow-right"></div>
+            </div>
           </li>
           <li class="skills__item color-js">
             <svg
@@ -262,40 +265,84 @@
             <p>60%</p> -->
           </li>
         </ul>
+
+        <div class="bar">
+          <div class="bar__metadata">
+            <span>HTML</span>
+            <span>98%</span>
+          </div>
+          <div class="bar_bg">
+            <div class="bar__value" style="width: 98%"></div>
+          </div>
+        </div>
       </section>
 
       <!-- Work -->
       <section id="work" class="section">
-        <h2 class="title">My Works</h2>
-        <p>Projects</p>
-        <ul>
-          <li><button>All</button></li>
-          <li><button>React</button></li>
-          <li><button>Next.js</button></li>
-          <li><button>Javascript</button></li>
-        </ul>
-        <ul>
-          <li>
-            <a href="https://" target="_blank" rel="noopener noreferrer">
-              <img src="" alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="https://" target="_blank" rel="noopener noreferrer">
-              <img src="" alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="https://" target="_blank" rel="noopener noreferrer">
-              <img src="" alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="https://" target="_blank" rel="noopener noreferrer">
-              <img src="" alt="" />
-            </a>
-          </li>
-        </ul>
+        <div class="">
+          <h2 class="title">My Works</h2>
+          <p>Projects</p>
+          <ul class="categories">
+            <li><button class="category category--selected">All</button></li>
+            <li><button class="category">React</button></li>
+            <li><button class="category">Next.js</button></li>
+            <li><button class="category">Javascript</button></li>
+          </ul>
+          <ul class="projects">
+            <li class="project">
+              <a href="https://" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://placehold.co/100x100"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="https://" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://placehold.co/100x100"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="https://" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://placehold.co/100x100"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="https://" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://placehold.co/100x100"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Arrow Up -->
       <aside>
