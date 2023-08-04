@@ -94,10 +94,6 @@ button:focus {
   max-width: var(--size-max-width);
 }
 
-.small {
-  transform: scale(0.5);
-}
-
 /* Header */
 .header {
   background-color: transparent;
@@ -109,6 +105,7 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  transition: all 0.5s ease-in-out;
 }
 
 .header__logo {
@@ -275,11 +272,10 @@ button:focus {
 }
 
 .job__image__box {
-  width: 300px;
+  width: 100px;
   max-width: 200px;
   max-height: 200px;
   overflow: hidden;
-  aspect-ratio: 4 / 3;
 }
 
 .job__image {
@@ -294,12 +290,6 @@ button:focus {
 .job__period {
   color: var(--color-primary);
   font-size: 0.8rem;
-}
-
-@media (max-width: 375px) {
-  .motto {
-    max-width: 100%;
-  }
 }
 
 /* Skills */
@@ -648,9 +638,6 @@ button:focus {
 }
 
 /* Footer */
-#contact {
-}
-
 .contact__links {
   display: flex;
   justify-content: center;
@@ -666,4 +653,95 @@ button:focus {
 
 .contact__link:hover {
   color: var(--color-accent);
+}
+
+/* 0부터 768px 까지 */
+@media screen and (max-width: 768px) {
+  :root {
+    --hex-width: 75px;
+    --hex-between: 75px;
+  }
+  .section {
+    padding: 3rem 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 4rem;
+    gap: 1rem;
+  }
+
+  .motto {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  #home {
+    padding: 2rem;
+  }
+
+  .skills__box {
+    grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width);
+    gap: 10px;
+  }
+
+  .skills__item:nth-child(8n + 5),
+  .skills__item:nth-child(8n + 6),
+  .skills__item:nth-child(8n + 7),
+  .skills__item:nth-child(8n + 8) {
+    margin-left: 0px;
+  }
+
+  .skills__item:nth-child(8n + 4),
+  .skills__item:nth-child(8n + 5),
+  .skills__item:nth-child(8n + 6) {
+    right: 45px;
+  }
+
+  .skills__item__active {
+    width: 81px;
+    height: 45px;
+    left: calc(50% - 41.3px);
+    margin: 13px 0;
+  }
+
+  .skills__item__active:before,
+  .skills__item__active:after {
+    width: 51.888px;
+    height: 51.888px;
+    left: 6.55px;
+  }
+  .skills__item__active:before {
+    top: -29.888px;
+  }
+
+  .skills__item__active:after {
+    bottom: -29.888px;
+  }
+
+  .categories {
+    flex-direction: column;
+  }
+
+  .category {
+    width: 100%;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
