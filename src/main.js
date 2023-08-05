@@ -17,3 +17,14 @@ const homeHeight = homeEl.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
   homeEl.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+// 스크롤이 Home 절반쯤 내려가면 Arrow-up 버튼의 diplay를 토글
+const arrowEl = document.querySelector(".arrow-up");
+
+document.addEventListener("scroll", () => {
+  if (1 - window.scrollY / homeHeight < 0.5) {
+    arrowEl.classList.remove("hidden");
+  } else {
+    arrowEl.classList.add("hidden");
+  }
+});
