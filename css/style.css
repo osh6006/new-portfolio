@@ -145,6 +145,10 @@ button:focus {
   border-radius: 4px;
 }
 
+.header--dark {
+  background-color: var(--color-primary);
+}
+
 /* Home */
 
 #home {
