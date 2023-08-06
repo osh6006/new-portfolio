@@ -138,6 +138,7 @@ button:focus {
 
 .header__menu__item {
   padding: 8px 16px;
+  border-bottom: 1px solid transparent;
 }
 
 .header__menu__item:hover {
@@ -151,6 +152,16 @@ button:focus {
 
 .header--dark {
   background-color: var(--color-primary);
+}
+
+.header__hamberger {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--color-text);
+  cursor: pointer;
 }
 
 /* Home */
@@ -688,10 +699,20 @@ button:focus {
   }
 
   .header__menu {
+    width: 100%;
+    display: none;
     flex-direction: column;
     text-align: center;
     padding: 1rem 4rem;
     gap: 1rem;
+  }
+
+  .header__menu__item {
+    display: block;
+  }
+
+  .header__hamberger {
+    display: block;
   }
 
   .motto {

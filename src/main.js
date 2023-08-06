@@ -28,3 +28,22 @@ document.addEventListener("scroll", () => {
     arrowEl.classList.add("hidden");
   }
 });
+
+// 햄버거 버튼으로 메뉴 열기 닫기
+const menuEl = document.querySelector(".header__menu");
+const menuBtn = document.querySelector(".header__hamberger");
+
+menuBtn.addEventListener("click", e => {
+  if (menuEl.style.display === "") {
+    menuEl.style.display = "flex";
+  } else {
+    menuEl.style.display = "";
+  }
+});
+
+menuEl.addEventListener("click", e => {
+  const clickElement = e.target;
+  if (clickElement.tagName === "A") {
+    menuEl.style.display = "";
+  }
+});
