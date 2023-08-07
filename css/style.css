@@ -41,6 +41,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: "Open Sans", "Noto Sans KR", sans-serif;
@@ -203,6 +206,8 @@ button:focus {
 }
 
 /* About */
+#about {
+}
 
 .motto {
   display: flex;
