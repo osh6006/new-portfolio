@@ -23,6 +23,15 @@
   --color-mongo: #47a248;
   --color-github: #73398d;
 
+  /* Background */
+  --home-bg-gradient: linear-gradient(
+    153deg,
+    rgba(5, 10, 19, 1) 0%,
+    rgba(14, 29, 55, 1) 100%
+  );
+
+  --home-bg-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23050A13' width='11' height='11'/%3E%3Crect fill='%23050b14' x='10' width='11' height='11'/%3E%3Crect fill='%23060b14' y='10' width='11' height='11'/%3E%3Crect fill='%23060b15' x='20' width='11' height='11'/%3E%3Crect fill='%23060c16' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23070c16' y='20' width='11' height='11'/%3E%3Crect fill='%23070d17' x='30' width='11' height='11'/%3E%3Crect fill='%23070d18' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23070e18' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23080e19' y='30' width='11' height='11'/%3E%3Crect fill='%23080e19' x='40' width='11' height='11'/%3E%3Crect fill='%23080f1a' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23090f1a' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%2309101b' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%2309101c' y='40' width='11' height='11'/%3E%3Crect fill='%230a101c' x='50' width='11' height='11'/%3E%3Crect fill='%230a111d' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%230a111d' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%230a111e' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%230b121e' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%230b121f' y='50' width='11' height='11'/%3E%3Crect fill='%230b1220' x='60' width='11' height='11'/%3E%3Crect fill='%230b1320' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%230b1321' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%230b1321' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%230c1422' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%230c1423' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%230c1423' x='70' width='11' height='11'/%3E%3Crect fill='%230c1524' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%230c1524' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%230c1525' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%230c1626' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%230c1626' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%230c1627' x='80' width='11' height='11'/%3E%3Crect fill='%230c1627' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%230c1728' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%230c1729' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%230d1729' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%230d182a' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%230d182a' x='90' width='11' height='11'/%3E%3Crect fill='%230d182b' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%230d182c' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%230d192c' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%230d192d' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%230d192e' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%230d192e' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%230d1a2f' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%230d1a2f' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%230d1a30' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%230d1a31' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%230d1b31' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%230d1b32' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%230d1b33' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%230e1b33' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%230e1c34' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%230e1c34' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%230e1c35' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%230e1c36' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%230e1d36' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%230E1D37' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+
   /* Size */
   --size-max-width: 1200px;
 
@@ -35,6 +44,12 @@
   --hex-margin: calc(var(--hex-width) / 2);
   --hex-border: calc(var(--hex-margin) / 1.73 /* sqrt(3) */);
   --hex-transition: all 0.2s ease;
+
+  /* Divider */
+  --divider-double-wave: url('data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" > <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" ></path> <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,1d65,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" ></path> <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" ></path> </svg>');
+  --divider-single-wave: url("data:image/svg+xml;utf-8,");
+  --divider-arrow: url('data:image/svg+xml;utf-8,  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z" class="shape-fill"></path> </svg>');
+  --divider-tilt-right: url('data:image/svg+xml;utf-8,<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path> </svg>');
 }
 
 * {
@@ -47,6 +62,12 @@ html {
 body {
   margin: 0;
   font-family: "Open Sans", "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--color-primary);
+  background: var(--color-primary);
+  background-image: var(--home-bg-svg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1,
@@ -178,7 +199,21 @@ button:focus {
   justify-content: center;
   text-align: center;
   color: var(--color-text);
-  background-color: var(--color-primary);
+}
+
+#home::after {
+  content: "";
+  width: calc(100% + 1.3px);
+  height: 100px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background-color: var(--color-white);
+  mask: var(--divider-double-wave);
+  -webkit-mask: var(--divider-double-wave);
 }
 
 .home__title {
@@ -207,6 +242,7 @@ button:focus {
 
 /* About */
 #about {
+  background: var(--color-white);
 }
 
 .motto {
@@ -318,11 +354,11 @@ button:focus {
 
 /* Skills */
 #skills {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-primary-variant);
   color: var(--color-text);
   gap: 16px;
 }
@@ -572,6 +608,7 @@ button:focus {
 
 /* Work */
 #work {
+  position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
 }
@@ -669,6 +706,28 @@ button:focus {
 }
 
 /* Footer */
+
+#contact::before {
+  content: "";
+  position: relative;
+  width: calc(100%);
+  height: 100px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  line-height: 0;
+  display: block;
+  background-color: var(--color-primary);
+  mask: var(--divider-arrow);
+  -webkit-mask: var(--divider-arrow);
+  transform: rotate(180deg);
+}
+
+#contact {
+  text-align: center;
+  color: var(--color-white);
+}
+
 .contact__links {
   display: flex;
   justify-content: center;
@@ -678,7 +737,6 @@ button:focus {
 }
 
 .contact__link {
-  color: var(--color-black);
   transition: color 250ms ease-in;
 }
 
