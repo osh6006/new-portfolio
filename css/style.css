@@ -9,7 +9,7 @@
 
   --color-white: #ffffff;
   --color-black: #050a13;
-  --color-blue: #03e8f9;
+  --color-blue: #00bfa5;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
   --color-hex-default: #000000;
@@ -284,7 +284,7 @@ button:focus {
 .motto__icon__hexagon {
   width: 100px;
   height: 58px;
-  background-color: #3498db;
+  background-color: var(--color-accent);
   position: relative;
   margin: 8px auto;
   padding: 4rem;
