@@ -778,7 +778,15 @@ button:focus {
   transition: color 250ms ease-in;
 }
 
-.contact__link:hover {
+.link__mail:hover {
+  color: var(--color-firebase);
+}
+
+.link__github:hover {
+  color: var(--color-github);
+}
+
+.link__blog:hover {
   color: var(--color-accent);
 }
 
