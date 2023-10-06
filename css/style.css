@@ -22,6 +22,9 @@
   --color-next: #000000;
   --color-mongo: #47a248;
   --color-github: #73398d;
+  --color-firebase: #ffca28;
+  --color-tailwind: #06b6d4;
+  --color-redux: #764abc;
 
   /* Background */
   --home-bg-gradient: linear-gradient(
@@ -376,7 +379,6 @@ button:focus {
 .skills__item {
   align-items: center;
   background-color: var(--color-hex-default);
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   fill: white;
@@ -529,7 +531,43 @@ button:focus {
   fill: var(--color-github);
 }
 
-.skills__item__active {
+.color-firebase {
+  background-color: var(--color-firebase);
+}
+.color-firebase::after,
+.color-firebase::before {
+  border-top-color: var(--color-firebase);
+  border-bottom-color: var(--color-firebase);
+}
+.color-firebase:hover {
+  fill: var(--color-firebase);
+}
+
+.color-tailwind {
+  background-color: var(--color-tailwind);
+}
+.color-tailwind::after,
+.color-tailwind::before {
+  border-top-color: var(--color-tailwind);
+  border-bottom-color: var(--color-tailwind);
+}
+.color-tailwind:hover {
+  fill: var(--color-tailwind);
+}
+
+.color-redux {
+  background-color: var(--color-redux);
+}
+.color-redux::after,
+.color-redux::before {
+  border-top-color: var(--color-redux);
+  border-bottom-color: var(--color-redux);
+}
+.color-redux:hover {
+  fill: var(--color-redux);
+}
+
+/* .skills__item__active {
   position: absolute;
   width: 103px;
   height: 58px;
@@ -554,7 +592,7 @@ button:focus {
   transform: scaleY(0.5774) rotate(-45deg);
   background-color: transparent;
   left: 9.766px;
-}
+} */
 
 .skills__item__active:before {
   top: -37.234px;
